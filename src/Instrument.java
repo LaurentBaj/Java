@@ -49,5 +49,9 @@ public class Instrument {
         this.instName = instName;
         this.soundSignature = soundSignature;
         this.isSecondhand = isSecondhand;
+
+        System.out.println(getInstName() + " makes a " + getSoundSignature() + " sound, " +
+                "is whether it is secondhand or not is " + isSecondhand() + ". " +
+                "It's id-number is " + getId() + ".");
     }
 }
