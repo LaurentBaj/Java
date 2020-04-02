@@ -14,6 +14,13 @@ public class Guitar extends Instrument {
         return true;
     }
 
+    // Constructors
+    public Guitar() {
 
+    }
+    public Guitar(int id, String instName, String soundSignature, boolean isSecondhand, String color){
+        super(id, instName, soundSignature, isSecondhand);
+        this.color = color;
+    }
 
 }
