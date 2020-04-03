@@ -24,6 +24,10 @@ public class Main {
         // I can now access them
         // Shorter way to do this:
         // System.out.println(((Guitar)thisInstrument).isElectricCanShredColor());
+
+        if(thisInstrument instanceof Guitar){
+            System.out.println("This is a Guitar-object");
+        }
     }
 
 }
