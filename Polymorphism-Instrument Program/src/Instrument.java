@@ -1,4 +1,3 @@
-
 public class Instrument {
 
     // Instance variables
@@ -53,6 +52,5 @@ public class Instrument {
         makeSound();
         System.out.println("Is it a secondhand? " + isSecondhand() + ". " + "It's id-number is " + getId() + ".");
         System.out.println("");
-
     }
 }

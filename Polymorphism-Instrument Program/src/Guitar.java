@@ -4,13 +4,13 @@ public class Guitar extends Instrument {
 
     // Inherited ability-methods that are overloaded
     public void makeSound(){
-        System.out.println("This is a " + this.getInstName() + "  and makes a " + this.getSoundSignature() + " type of sound." );
+        System.out.println("This is a " + this.getInstName() + " and it has a " + this.getSoundSignature() + " tone." );
     }
 
     // Ability methods that are exclusive to the Guitar class
-    public void isElectricCanShredColor(){
-        System.out.println("This " + this.getInstName() + " can shred! " +
-                " It's color is " + this.color + ". Is it electric? " + this.isElectric);
+    public String isElectricCanShredColor(){
+        return "This " + this.getInstName() + " can shred! " +
+                "It's color is " + this.color + ". Is it electric? " + this.isElectric;
     }
 
     // Constructors
