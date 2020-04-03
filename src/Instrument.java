@@ -36,7 +36,7 @@ public class Instrument {
 
     // Abilities
     public void makeSound(){
-        System.out.println(this.instName + " makes a " + soundSignature + " type of sound." );
+        System.out.println("This is a " + this.instName + "  and makes a " + soundSignature + " type of sound." );
     }
 
 
@@ -50,8 +50,9 @@ public class Instrument {
         this.soundSignature = soundSignature;
         this.isSecondhand = isSecondhand;
 
-        System.out.println(getInstName() + " makes a " + getSoundSignature() + " sound, " +
-                "is whether it is secondhand or not is " + isSecondhand() + ". " +
-                "It's id-number is " + getId() + ".");
+        makeSound();
+        System.out.println("Is it a secondhand? " + isSecondhand() + ". " + "It's id-number is " + getId() + ".");
+        System.out.println("");
+
     }
 }
