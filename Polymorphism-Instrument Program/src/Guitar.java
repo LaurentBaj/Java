@@ -9,7 +9,7 @@ public class Guitar extends Instrument {
 
     // Ability methods that are exclusive to the Guitar class
     public String isElectricCanShredColor(){
-        return "This " + this.getInstName() + " can shred! " +
+        return "\bThis " + this.getInstName() + " can shred! " +
                 "It's color is " + this.color + ". Is it electric? " + this.isElectric;
     }
 
@@ -20,7 +20,6 @@ public class Guitar extends Instrument {
     public Guitar(int id, String instName, String soundSignature, boolean isSecondhand, String color, boolean isElectric){
         super(id, instName, soundSignature, isSecondhand);
         this.color = color; this.isElectric = isElectric;
-        isElectricCanShredColor();
     }
 
 }
