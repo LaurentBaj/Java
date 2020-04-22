@@ -1,4 +1,6 @@
-package Ex10;
+package Ex10.Shapes;
+
+import Ex10.Shape;
 
 public class Rectangle extends Shape {
     protected double length;

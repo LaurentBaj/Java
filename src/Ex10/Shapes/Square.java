@@ -1,6 +1,8 @@
 package Ex10;
 
-public class Square extends Ex10.Rectangle {
+import Ex10.Shapes.Rectangle;
+
+public class Square extends Rectangle {
     private double side;
 
     // Constructors

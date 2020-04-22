@@ -1,4 +1,7 @@
-package Ex10;
+package Ex10.Shapes;
+
+import Ex10.Circle;
+import Ex10.Square;
 
 public class TestShapes {
     public static void main(String[] args){
@@ -7,12 +10,12 @@ public class TestShapes {
         System.out.println(s1.getArea());
         System.out.println(s1.getPerimeter());
 
-        Ex10.Rectangle r1 = new Ex10.Rectangle(5, 3, "Red", false);
+        Rectangle r1 = new Rectangle(5, 3, "Red", false);
         System.out.println(r1);
         System.out.println(r1.getArea());
         System.out.println(r1.getPerimeter());
 
-        Ex10.Square square = new Square(3, "Red", false);
+        Square square = new Square(3, "Red", true);
         System.out.println(square);
         System.out.println(square.getArea());
         System.out.println(square.getPerimeter());

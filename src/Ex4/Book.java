@@ -28,13 +28,13 @@ public class Book {
     public String getAuthorName(){
         return author.getName();
     }
+
     public String getAuthorEmail(){
         return author.getEmail();
     }
     public char getAuthorGender(){
         return author.getGender();
     }
-
 
     // Constructors
     public Book(String name, Author author, int quantity){
