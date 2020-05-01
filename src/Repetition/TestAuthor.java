@@ -28,7 +28,6 @@ public class TestAuthor {
         System.out.println("");
         BooksMoreThanOneAuthor bmtoa = new BooksMoreThanOneAuthor("Russian Novels Collection", authors, 22.3, 33);
         System.out.println(bmtoa);
-        
 
     }
 }
