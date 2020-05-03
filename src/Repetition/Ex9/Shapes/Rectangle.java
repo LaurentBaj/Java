@@ -1,4 +1,4 @@
-package Repetition.Ex9;
+package Repetition.Ex9.Shapes;
 
 public class Rectangle extends Shape {
     private double length;
