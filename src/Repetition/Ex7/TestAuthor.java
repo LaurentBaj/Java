@@ -1,8 +1,7 @@
-package Repetition;
+package Repetition.Ex7;
 
 public class TestAuthor {
     public static void main(String[] args){
-
         // Testing the Author Class
         Author author1 = new Author("Fjodor Dostojevskij", "fjodor@hotmail.com", 'm');
         System.out.println(author1);
@@ -26,8 +25,7 @@ public class TestAuthor {
 
         // Testing the Book Class containing more than one author
         System.out.println("");
-        BooksMoreThanOneAuthor bmtoa = new BooksMoreThanOneAuthor("Russian Novels Collection", authors, 22.3, 33);
-        System.out.println(bmtoa);
-
+        BooksMoreThanOneAuthor russianNovels = new BooksMoreThanOneAuthor("Russian Novels Collection", authors, 22.3, 33);
+        System.out.println(russianNovels);
     }
 }

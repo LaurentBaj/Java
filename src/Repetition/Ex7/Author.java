@@ -1,4 +1,4 @@
-package Repetition;
+package Repetition.Ex7;
 
 public class Author {
     private String name;
