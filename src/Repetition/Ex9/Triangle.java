@@ -21,7 +21,7 @@ public class Triangle extends Shape{
     // Methods
     @Override
     public String toString(){
-        return "This is a triangle";
+        return "This is a triangle with surface area " + getArea() + " and has " + super.toString();
     }
     @Override
     public double getArea(){

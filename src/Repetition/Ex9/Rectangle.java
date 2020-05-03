@@ -25,6 +25,6 @@ public class Rectangle extends Shape {
     }
     @Override
     public String toString(){
-        return "This is a rectangle";
+        return "This is a rectangle with surface area " + getArea() + " and has " + super.toString();
     }
 }

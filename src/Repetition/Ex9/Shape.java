@@ -13,7 +13,7 @@ public class Shape{
 
     // Methods
     public String toString(){
-        return "";
+        return "color[" + color + "]";
     }
     public double getArea(){
         System.out.println("Unknown shape");
