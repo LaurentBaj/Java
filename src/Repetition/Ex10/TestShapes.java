@@ -31,11 +31,14 @@ public class TestShapes {
         Rectangle r1 = (Rectangle)s6;
         System.out.println(((Rectangle) s6).getLength());
 
+        System.out.println("");
 
-
-
-
-
+        Shape s7 = new Square();
+        System.out.println(s7);
+        ((Square) s7).setSide(5);
+        System.out.println(s7);
+        System.out.println(s7.getArea());
+        System.out.println(s7.getPerimeter());
 
     }
 }
