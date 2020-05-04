@@ -18,5 +18,4 @@ public class TestMonsters {
             System.out.println(m.attack());
         }
     }
-
 }
