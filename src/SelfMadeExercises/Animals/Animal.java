@@ -72,7 +72,6 @@ public abstract class Animal {
         }
     }
 
-
     // Method
     public abstract String toString();
     public abstract String makeSound();

@@ -1,6 +1,6 @@
 package SelfMadeExercises.Animals;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements Mammal {
     private String color;
     private double weight;
 
@@ -33,8 +33,7 @@ public class Dog extends Animal {
         return weight;
     }
 
-
-    // Method
+    // Methods
     @Override
     public String toString(){
         if (super.getOwner() == null){
@@ -61,5 +60,18 @@ public class Dog extends Animal {
         else {
             return "The dog " + getName() + ", of unknown gender, eats food";
         }
+    }
+    @Override
+    public boolean produceMilk() {
+        return true;
+    }
+    @Override
+    public boolean giveBirth() {
+        return true;
+    }
+    @Override
+    public double temperature() {
+        System.out.println("This animal can regulate body temperature");
+        return 38;
     }
 }

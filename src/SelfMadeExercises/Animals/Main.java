@@ -1,5 +1,7 @@
 package SelfMadeExercises.Animals;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args){
 
@@ -28,5 +30,16 @@ public class Main {
         System.out.println(a4.eat());
         a4.setGender('a');
         System.out.println(a4.eat());
+        System.out.println(a4.temperature());
+
+        // Duck class
+        Animal a5 = new Duck();
+        System.out.println(a5);
+        Animal a6 = new Duck("Donald", "American", 'M', 85, 100000.2, false);
+        System.out.println(a6);
+        Duck a7 = new Duck("Daisy", "American", 'F', 67, 1000.3, false);
+        System.out.println(a7);
+        a7.setColors("blue", "red");
+        a7.getColors();
     }
 }
