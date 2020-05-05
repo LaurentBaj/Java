@@ -21,5 +21,12 @@ public class Main {
         Owner o2 = new Owner("Karoline", "Karonline@hotmail.com", 'F', 1996);
         Dog a4 = new Dog("Jenny", "Bernese", 'F', 4, 20000.2, true, o2, "Black", 34.6);
         System.out.println(a4);
+
+        // Testing integrated methods
+        System.out.println(a4.makeSound());
+        System.out.println(((Dog)a3).makeSound());
+        System.out.println(a4.eat());
+        a4.setGender('a');
+        System.out.println(a4.eat());
     }
 }

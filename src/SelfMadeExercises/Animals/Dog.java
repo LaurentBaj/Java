@@ -48,11 +48,18 @@ public class Dog extends Animal {
     }
     @Override
     public String makeSound() {
-        return "The dog barks";
+        return "The dog " + super.getName() + " barks";
     }
-
     @Override
     public String eat() {
-        return "The dog eats his treats";
+        if(super.getGender() == 'f' || super.getGender() == 'F'){
+            return "The dog " + super.getName()  + " eats her food";
+        }
+        else if(super.getGender() == 'm' || super.getGender() == 'M'){
+            return "The dog " + super.getName()  + " eats her food";
+        }
+        else {
+            return "The dog " + getName() + ", of unknown gender, eats food";
+        }
     }
 }
