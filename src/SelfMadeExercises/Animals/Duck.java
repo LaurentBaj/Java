@@ -1,30 +1,35 @@
 package SelfMadeExercises.Animals;
 
 public class Duck extends Animal {
-    private static boolean canFly = true;
     private String[] colors;
 
     // Constructors
     public Duck(){
         super();
     }
-    public Duck(String name, String type, char gender, int yearsOld, double purchaseCost, boolean hasOwner){
-        super(name, type, gender, yearsOld, purchaseCost, hasOwner);
+    public Duck(String name, String type, char gender, int age, double purchaseCost, boolean hasOwner){
+        super(name, type, gender, age, purchaseCost, hasOwner);
+    }
+    public Duck(String name, String type, char gender, int age, double purchaseCost, boolean hasOwner, String[] colors){
+        super(name, type, gender, age, purchaseCost, hasOwner);
+        this.colors = colors;
     }
 
-    public void setColors(String color1, String color2){
-        this.colors[0] = color1;
-        this.colors[1] = color2;
-    }
+    // GS
     public String getColors(){
-        return colors[0];
+        String colorContainer = "";
+        for(String color:colors){
+            colorContainer = color;
+        }
+        return colorContainer;
     }
+
 
     // Methods
     @Override
     public String toString() {
         return "Duck[type = " + super.getType() + ", name = " + super.getName() + ", gender = " + getGender() +
-                ", age = " + super.getYear() +  ", cost = " + super.getCost() + "]";
+                ", age = " + super.getAge() +  ", cost = " + super.getCost() + ", colors[" + getColors() + "]";
     }
     @Override
     public String makeSound() {

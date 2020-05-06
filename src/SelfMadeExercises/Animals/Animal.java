@@ -3,7 +3,7 @@ package SelfMadeExercises.Animals;
 public abstract class Animal {
     private String name, type;
     private char gender;
-    private int yearsOld;
+    private int age;
     private double purchaseCost;
     private boolean hasOwner;
     private Owner owner;
@@ -12,19 +12,19 @@ public abstract class Animal {
     public Animal(){
 
     }
-    public Animal(String name, String type, char gender, int yearsOld, double purchaseCost, boolean hasOwner){
+    public Animal(String name, String type, char gender, int age, double purchaseCost, boolean hasOwner){
         this.name = name;
         this.type = type;
         this.gender = gender;
-        this.yearsOld = yearsOld;
+        this.age = age;
         this.purchaseCost = purchaseCost;
         this.hasOwner = hasOwner;
     }
-    public Animal(String name, String type, char gender, int yearsOld, double purchaseCost, boolean hasOwner, Owner owner){
+    public Animal(String name, String type, char gender, int age, double purchaseCost, boolean hasOwner, Owner owner){
         this.name = name;
         this.type = type;
         this.gender = gender;
-        this.yearsOld = yearsOld;
+        this.age = age;
         this.purchaseCost = purchaseCost;
         this.hasOwner = hasOwner;
         if(hasOwner == true){
@@ -51,11 +51,11 @@ public abstract class Animal {
     public void setGender(char gender) {
         this.gender = gender;
     }
-    public int getYear() {
-        return yearsOld;
+    public int getAge() {
+        return age;
     }
-    public void setYearsOld(int yearsOld) {
-        this.yearsOld = yearsOld;
+    public void setAge(int age) {
+        this.age = age;
     }
     public double getCost() {
         return purchaseCost;

@@ -37,9 +37,8 @@ public class Main {
         System.out.println(a5);
         Animal a6 = new Duck("Donald", "American", 'M', 85, 100000.2, false);
         System.out.println(a6);
-        Duck a7 = new Duck("Daisy", "American", 'F', 67, 1000.3, false);
-        System.out.println(a7);
-        a7.setColors("blue", "red");
-        a7.getColors();
+        String[] container = new String[1];
+        container[0] = "red"; container[1] = "Blue";
+        Duck a7 = new Duck("Daisy", "American", 'F', 67, 1000.3, false, container);
     }
 }

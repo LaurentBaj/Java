@@ -8,13 +8,13 @@ public class Dog extends Animal implements Mammal {
     public Dog(){
         super();
     }
-    public Dog(String name, String type, char gender, int yearsOld, double purchaseCost, boolean hasOwner, String color, double weight){
-       super(name, type, gender, yearsOld, purchaseCost, hasOwner);
+    public Dog(String name, String type, char gender, int age, double purchaseCost, boolean hasOwner, String color, double weight){
+       super(name, type, gender, age, purchaseCost, hasOwner);
        this.color = color;
        this.weight = weight;
     }
-    public Dog(String name, String type, char gender, int yearsOld, double purchaseCost, boolean hasOwner, Owner owner, String color, double weight){
-       super(name, type, gender, yearsOld, purchaseCost, hasOwner, owner);
+    public Dog(String name, String type, char gender, int age, double purchaseCost, boolean hasOwner, Owner owner, String color, double weight){
+       super(name, type, gender, age, purchaseCost, hasOwner, owner);
        this.color = color;
        this.weight = weight;
     }
@@ -38,11 +38,11 @@ public class Dog extends Animal implements Mammal {
     public String toString(){
         if (super.getOwner() == null){
             return "Dog[type = " + super.getType() + ", name = " + super.getName() + ", gender = " + getGender() +
-                    ", age = " + super.getYear() +  ", cost = " + super.getCost() + "]";
+                    ", age = " + super.getAge() +  ", cost = " + super.getCost() + "]";
         }
         else {
             return "Dog[type = " + super.getType() + ", name = " + super.getName() + ", gender = " + super.getGender() + ", age = "
-                    + super.getYear() + ", cost = " + super.getCost() + ", has owner = " + true + ", " + super.getOwner().toString() + "]";
+                    + super.getAge() + ", cost = " + super.getCost() + ", has owner = " + true + ", " + super.getOwner().toString() + "]";
         }
     }
     @Override
