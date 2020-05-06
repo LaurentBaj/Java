@@ -3,6 +3,7 @@ package SelfMadeExercises.MockExam;
 public abstract class Animal {
     private String name, generation;
     private int age;
+    private Stable stable;
 
     // Constructors
     public Animal(){
@@ -16,6 +17,12 @@ public abstract class Animal {
         this.name = name;
         this.generation = generation;
         this.age = age;
+    }
+    public Animal(String name, String generation, int age, Stable stable){
+        this.name = name;
+        this.generation = generation;
+        this.age = age;
+        this.stable = stable;
     }
 
     // GS
@@ -36,6 +43,12 @@ public abstract class Animal {
     }
     public int getAge(){
         return age;
+    }
+    public void setStable(Stable stable){
+        this.stable = stable;
+    }
+    public Stable getStable(){
+        return stable;
     }
 
     // Method

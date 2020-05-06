@@ -11,10 +11,18 @@ public class Lion extends Animal{
     public Lion(String name, String generation, int age){
         super(name, generation, age);
     }
+    public Lion(String name, String generation, int age, Stable stable){
+        super(name, generation, age, stable);
+    }
 
     // Methods
     @Override
     public String toString() {
-        return "My name is " + super.getName() + ", I belong to the" + super.getGeneration() + " and i am " + super.getAge() + " years old";
+        if(super.getStable() == null){
+            return "My name is " + super.getName() + ", I belong to the " + super.getGeneration() + " and I am " + super.getAge() + " years old.";
+        }
+        else {
+            return "My name is " + super.getName() + ", I belong to the " + super.getGeneration() + " and I am " + super.getAge() + " years old. " + super.getStable();
+        }
     }
 }
