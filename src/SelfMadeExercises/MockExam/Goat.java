@@ -46,7 +46,7 @@ public class Goat extends Animal implements Feedable {
             return "You fed me my favorite food!";
         }
         else {
-            return "You fed the goat";
+            return "Thank you for feeding me human";
         }
     }
 }

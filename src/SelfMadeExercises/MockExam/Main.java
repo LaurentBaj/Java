@@ -31,5 +31,12 @@ public class Main {
         Animal a8 = new Lion("Henrik", "third generation Braaten", 23, s2);
         System.out.println(a8);
 
+        System.out.println("");
+        Stable s3 = new Stable("Brennerjordet 13", "Tredje Skur", "Vøyen Gård");
+        Animal a9 = new Goat("Dex", "sixth generation norwegian goat", 3, "apple", s3);
+        System.out.println(a9);
+        System.out.println(((Goat)a9).feedAnimal("appl"));
+        System.out.println(((Goat)a9).feedAnimal("apple"));
+
     }
 }
